@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+}
+
+
+
+body {
+    padding: 64px;
+    background: var(--Platform-Aliases-Background, #121214);
+    font-family: 'Mulish', sans-serif;
+}
+
+.app {
+
+    grid-template-columns: repeat(3, 366px);
+    display: grid;
+    place-content: center;
+    gap: 60px;
+
+
+}
+
+header h1 {
+    color: var(--Brand-Colors-Explorer-mid, #02799D);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: var(--Platform-Aliases-Ttulos, #E1E1E6);
+    font-family: Mulish;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    border: 2px solid var(--Platform-Aliases-Shape-terciria, #323238);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    background: var(--Platform-Aliases-Shape-principal, #202024);
+    border-radius: 15px;
+}
+
+.box img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+.texto {
+
+    color: var(--Platform-Aliases-Texto-base, #C4C4CC);
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #C4C4CC;
+    padding: 0px 3.2rem 3.2rem;
+
+}
+
+.texto h1 {
+    padding-bottom: 24px;
+}
+
+@media (max-width:1226px) {
+
+    .app {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
